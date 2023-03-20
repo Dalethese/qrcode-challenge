@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', open-sans;
+}
+:root 
+{
+  --bgColor: hsl(212, 45%, 89%);
+  --cardBgColor: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(212, 45%, 89%);
+  --titleColor: hsl(218, 44%, 22%);
+  --paragraphColor: hsl(220, 15%, 55%);
+}
+
+body 
+{
+  background-color: var(--bgColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+}
+
+.card
+{
+  max-width: 319px;
+  background-color: var(--cardBgColor);
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.img img 
+{
+  width: 285px;
+  height: 285px;
+  border-radius: 10px;
+}
+
+.card h2 
+{
+  color: var(--titleColor);
+}
+.card p 
+{
+  color: var(--paragraphColor);
+  font-weight: 400;
+  padding: 0 15px 15px;
+}
+
+.attribution 
+{ 
+  font-size: 11px; 
+  text-align: center;
+  
+}
+.attribution a 
+{ 
+  color: #3e52a3; 
+}
